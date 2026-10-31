@@ -1,0 +1,118 @@
+{
+  "results": [
+    {
+      "model": "KNN",
+      "accuracy": 0.9977355518361721,
+      "precision": 0.96875,
+      "recall": 0.916256157635468,
+      "f1": 0.9417721518987342,
+      "balanced_accuracy": 0.9578266924403982,
+      "pr_auc": 0.9787245147868209,
+      "threshold": 0.5699971866729375,
+      "validation_f1": 0.9570552147239264,
+      "confusion_matrix": [
+        [
+          9948,
+          6
+        ],
+        [
+          17,
+          186
+        ]
+      ]
+    },
+    {
+      "model": "SVM",
+      "accuracy": 0.9980309146401497,
+      "precision": 0.9552238805970149,
+      "recall": 0.9458128078817734,
+      "f1": 0.9504950495049505,
+      "balanced_accuracy": 0.9724543243748831,
+      "pr_auc": 0.9825547308305375,
+      "threshold": 0.4723859010197807,
+      "validation_f1": 0.9447852760736196,
+      "confusion_matrix": [
+        [
+          9945,
+          9
+        ],
+        [
+          11,
+          192
+        ]
+      ]
+    },
+    {
+      "model": "Naive Bayes",
+      "accuracy": 0.9766663384857733,
+      "precision": 0.4611872146118721,
+      "recall": 0.9950738916256158,
+      "f1": 0.6302652106084243,
+      "balanced_accuracy": 0.9856824149709353,
+      "pr_auc": 0.4590138106798062,
+      "threshold": 1.0,
+      "validation_f1": 0.6468253968253969,
+      "confusion_matrix": [
+        [
+          9718,
+          236
+        ],
+        [
+          1,
+          202
+        ]
+      ]
+    },
+    {
+      "model": "Logistic Regression",
+      "accuracy": 0.9981293689081422,
+      "precision": 0.9466019417475728,
+      "recall": 0.9605911330049262,
+      "f1": 0.9535452322738386,
+      "balanced_accuracy": 0.9797430248106809,
+      "pr_auc": 0.9798426075118654,
+      "threshold": 0.9480605276462235,
+      "validation_f1": 0.9631901840490797,
+      "confusion_matrix": [
+        [
+          9943,
+          11
+        ],
+        [
+          8,
+          195
+        ]
+      ]
+    },
+    {
+      "model": "Decision Tree",
+      "accuracy": 0.9966525548882544,
+      "precision": 0.8967136150234741,
+      "recall": 0.9408866995073891,
+      "f1": 0.9182692307692307,
+      "balanced_accuracy": 0.9693382663701302,
+      "pr_auc": 0.8791317797343785,
+      "threshold": 0.9978854224275348,
+      "validation_f1": 0.9271137026239067,
+      "confusion_matrix": [
+        [
+          9932,
+          22
+        ],
+        [
+          12,
+          191
+        ]
+      ]
+    }
+  ],
+  "best_model": "Logistic Regression",
+  "info": {
+    "best_model": "Logistic Regression",
+    "threshold": 0.9480605276462235,
+    "label_note": "Proxy anomaly label derived from extreme sensor-window deviation; not verified failure ground truth. Stratified random split is used for proxy-label model comparison.",
+    "feature_count": 64,
+    "train_rows": 40625,
+    "test_rows": 10157
+  }
+}

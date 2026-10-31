@@ -1,0 +1,27 @@
+# Python virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Large raw datasets (>100MB exceeds GitHub push limit)
+data/MetroPT3(AirCompressor).csv
+data/*.csv
+
+# Local backup & scratch
+_backup_original/
+*.log
+
+# IDE & OS files
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
